@@ -1,0 +1,70 @@
+TODO
+    apiKey + passCode validation
+    v1/
+
+    xml - json
+
+NÁPADY
+    LOKACE
+        IP
+            ip -> země
+
+    TODO random yoda quotes
+    TODO random word
+
+    TODO IČO
+        ičo -> info
+
+    TODO IMAGE
+        Výřez obrázku
+        změnšení
+        náhled videa
+
+    SOCIAL
+        posty z FB
+        posty z Twitter
+        videa z YT
+        zkrácená url
+        seznam svátků země
+
+    YOUTUBE
+        download mp4
+        convert to mp3
+        udělat bokem GUI
+
+HOTOVO
+    PDF
+        html -> pdf
+        url -> pdf
+
+    LOREM IPSUM
+        /lorem-ipsum GET=[count]
+
+    ANIMAL FACTS
+        /animal-facts GET=[animal]
+        /animal-facts/random GET=[animal]
+
+    CHUCK NORRIS JOKES
+        /chuck-norris-jokes
+        /chuck-norris-jokes/random
+
+    RANDOM QUOTES
+        /daily-quotes GET[cat, author]
+        /daily-quotes/random
+        /daily-quotes/authors
+        /daily-quotes/categories
+
+
+ZÁSADY
+    hlášky problému
+        errors
+            item: 0
+            code: 404
+            nessage: Not in UTF-8 format
+            field: currency
+            value: €
+    konzistence
+        endpointy v plurálu
+        paramName
+    query
+        example.com/api/v2/cities?fields=name,phone,mail
