@@ -74,12 +74,7 @@ class BasePresenter extends Nette\Application\UI\Presenter
     {
         $this->items = $items;
         $this->response = $this->getResponse();
-
-        try {
-            $this->respond();
-        } catch (AbortException $e) {
-            $this->createLog($e);
-        }
+        $this->respond();
     }
 
     public function getResponse(): ArrayHash
@@ -121,12 +116,7 @@ class BasePresenter extends Nette\Application\UI\Presenter
         $this->getHttpResponse()->setHeader('Content-Type', 'application/json');
         $this->getHttpResponse()->setHeader('Access-Control-Allow-Methods', 'GET, POST');
 
-        try {
-            $this->sendJson($response ?? $this->response);
-        } catch (Throwable $e) {
-            $this->createLog($e);
-            $this->terminate();
-        }
+        $this->sendJson($response ?? $this->response);
     }
 
     public function createLog(Throwable $e, $type = ILogger::EXCEPTION): void

@@ -20,7 +20,7 @@ final class AnimalFactsPresenter extends BasePresenter
      */
     public function actionDefault(): void
     {
-        $this->query = $this->animalFactsModel->getAllAnimals();
+        $this->query = $this->animalFactsModel->getAll();
 
         $this->addQueryFilter('animal');
         $this->setQueryLimit();

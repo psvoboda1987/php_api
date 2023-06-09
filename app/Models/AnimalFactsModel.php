@@ -15,7 +15,7 @@ final class AnimalFactsModel
     {
     }
 
-    public function getAllAnimals(): Fluent
+    public function getAll(): Fluent
     {
         return $this->db->select('*')->from(self::TABLE);
     }
